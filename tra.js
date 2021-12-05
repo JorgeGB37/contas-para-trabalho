@@ -1,19 +1,21 @@
-function contadecimal(){
-    var AAA = document.getElementById("primeira caixa").value;
-    var R
-    R=AAA-0
-    if(R<0)
-    document.getElementById("resultadoconta").innerHTML = "Erro ";
-    else
-    document.getElementById("resultadoconta").innerHTML = "O Decimal é: " + R;
+function inversabinaria(){
+    var binary = document.getElementById("primeira caixa").value;
+    var int = parseInt(binary, 2);
+    document.getElementById("resultadocontadecimal").innerHTML = "O Decimal é:" + int;
+}function inversaoctal(){
+    var octal = document.getElementById("primeira2 caixa").value;
+    var inte = parseInt(octal, 8);
+    document.getElementById("resultadocontadecimal2").innerHTML = "O Decimal é:" + inte;
+}
+function inversahexadecimal(){
+    var hexa = document.getElementById("primeira3 caixa").value;
+    var intei = parseInt(hexa, 16);
+    document.getElementById("resultadocontadecimal3").innerHTML = "O Decimal é:" + intei;
 }
 function contabinaria(){
         let bin = 0;
         let rem, i = 1
         var x = document.getElementById("segunda caixa").value;
-        if(0<x<1)
-        document.getElementById("resultadoconta2").innerHTML = "Erro ";
-
         while (x != 0) {
             rem = x % 2;
             x = parseInt(x / 2);
